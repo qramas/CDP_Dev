@@ -35,22 +35,22 @@
       </div><!-- /.container-fluid -->
     </nav>
     <h1 class="col-sm-offset-2 col-sm-8">Inscrire un atelier</h1>
-    <form class="form-horizontal col-sm-offset-2 col-sm-8" action=".php" method="get">
+    <form class="form-horizontal col-sm-offset-2 col-sm-8" action=".php" method="post">
           <div class="form-group">
-            <label for="inputNom" >Titre définitif</label>
-              <input type="text" class="form-control" id="inputEmail3" placeholder="Titre définitif" required>
+            <label for="input-titre" >Titre définitif</label>
+              <input type="text" name="titre" class="form-control" id="input-titre" placeholder="Titre définitif" required>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Thème</label>
-              <input type="text" class="form-control" id="inputTheme" placeholder="Thème" required>
+            <label for="input-theme" >Thème</label>
+              <input type="text" name="theme" class="form-control" id="input-theme" placeholder="Thème" required>
           </div>
           <div class="form-group">
-            <label for="inputType" >Type</label>
-              <input type="text" class="form-control" id="inputType" placeholder="Type" required>
+            <label for="input-type" >Type</label>
+              <input type="text" name="type" class="form-control" id="input-type" placeholder="Type" required>
           </div>
           <div class="form-group">
-            <label for="inputCreneaux" >Créneaux</label>
-              <table class="table table-bordered" id="inputCreneaux">
+            <label for="input-creneaux" >Créneaux</label>
+              <table class="table table-bordered" id="input-creneaux">
                 <tbody>
                   <tr>
                   <td></td>
@@ -64,35 +64,35 @@
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="a1"  value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="a2" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="a3" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="a4" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="a5" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
@@ -102,35 +102,35 @@
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="pm1" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="pm2" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="pm3" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="pm4" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" name="blankRadio" id="blankRadio1" value="option1" aria-label="">
+                        <input type="checkbox" name="pm5" value="1" aria-label="">
                       </label>
                     </div>
                   </td>
@@ -139,27 +139,27 @@
               </table>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Laboratoire</label>
-              <input type="text" class="form-control" id="inputTheme" placeholder="Laboratoire" required>
+            <label for="input-laboratoire" >Laboratoire</label>
+              <input type="text" name="laboratoire" class="form-control" id="input-laboratoire" placeholder="Laboratoire" required>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Adresse</label>
-              <input type="text" class="form-control" id="inputTheme" placeholder="Adresse" required>
+            <label for="input-adresse" >Adresse</label>
+              <input type="text" name="adresse" class="form-control" id="input-adresse" placeholder="Adresse" required>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Ville</label>
-              <input type="text" class="form-control" id="inputTheme" placeholder="Ville" required>
+            <label for="input-ville" >Ville</label>
+              <input type="text" name="ville" class="form-control" id="input-ville" placeholder="Ville" required>
           </div>
           <div class="col-sm-5 no-margin no-padding">
           <div class="form-group">
-            <label for="inputTheme" class="control-label">Code postal</label>
-              <input type="text" class="form-control" id="inputTheme";pattern="[0-9]{4}" placeholder="Code postal" required>
+            <label for="input-cp" class="control-label">Code postal</label>
+              <input type="text" name="cp" class="form-control" id="input-cp" pattern="[0-9]{5}" placeholder="Code postal" required>
             </div>
           </div>
           <div class="col-sm-offset-2 col-sm-5 no-padding">
           <div class="form-group">
-            <label for="inputTheme" class="control-label">Zone</label>
-              <select class="form-control">
+            <label for="input-zone" class="control-label">Zone</label>
+              <select name="zone" class="form-control" id="input-zone">
                 <option>A</option>
                 <option>B</option>
                 <option>C</option>
@@ -169,52 +169,52 @@
           </div>
           <div class="col-sm-5 no-margin no-padding">
           <div class="form-group">
-            <label for="inputTheme" >Durée</label>
+            <label for="input-duree" >Durée</label>
               <div class="input-group">
-                  <input  type="number" name="duree" min="1" class="form-control" id="exampleInputAmount" placeholder="Durée">
+                  <input  type="number" name="duree" min="1" class="form-control" id="input-duree" placeholder="Durée">
                   <div class="input-group-addon"> minutes</div>
             </div>
           </div>
           </div>
           <div class="col-sm-offset-2 col-sm-5 no-padding">
           <div class="form-group">
-            <label for="inputTheme">Capacitée</label>
+            <label for="input-capacitee">Capacitée</label>
               <div class="input-group">
-                  <input type="number"  min="1" class="form-control" id="exampleInputAmount" placeholder="Capacitée">
+                  <input type="number" name="capacitee" min="1" class="form-control" id="input-capacitee" placeholder="Capacitée">
                   <div class="input-group-addon"> personnes</div>
             </div>
           </div>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Résumé</label>
-            <textarea class="form-control" rows="5" id="comment" placeholder="Résumé"></textarea>
+            <label for="input-resume" >Résumé</label>
+            <textarea class="form-control" name="resume" rows="5" id="input-resume" placeholder="Résumé"></textarea>
           </div>
           <div class="form-group">
-            <label for="inputTheme">Public visé</label>
-            <div class="col-sm-12">
+            <label for="input-public">Public visé</label>
+            <div class="col-sm-12" id="input-public">
             <div class="col-sm-6">
               <div class="input-group">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv1" type="checkbox" value="1">
                     Primaire
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv2" type="checkbox" value="1">
                     6ème - 5ème
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv3" type="checkbox" value="1">
                     4ème - 3ème
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv4" type="checkbox" value="1">
                     2nd
                   </label>
                 </div>
@@ -224,25 +224,25 @@
               <div class="input-group">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv5" type="checkbox" value="1">
                     1ère
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv7" type="checkbox" value="1">
                     Terminale
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv8" type="checkbox"value="1">
                     Classes préparatoires
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="">
+                    <input name="pv9" type="checkbox" value="1">
                     Université
                   </label>
                 </div>
@@ -251,8 +251,8 @@
           </div>
           </div>
           <div class="form-group">
-            <label for="inputTheme" >Disciplines </label>
-              <input type="text" class="form-control" id="inputTheme" placeholder="Disciplines" required>
+            <label for="input-disciplines" >Disciplines </label>
+              <input type="text" name="disciplines" class="form-control" id="input-disciplines" placeholder="Disciplines" required>
           </div>
           <div class="form-group">
               <button type="submit" class="btn btn-default pull-right">Valider</button>
