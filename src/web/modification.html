@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Circuit Scientifique Bordelais - Inscription Atelier</title>
+      <title>Circuit Scientifique Bordelais - Modification Atelier</title>
       <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom css-->
@@ -29,26 +29,26 @@
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                      <li><a href="#">Lister les ateliers</a></li>
-                     <li class="active"><a href="#">Inscrire un atelier<span class="sr-only">(current)</span></a></li>
+                     <li><a href="#">Inscrire un atelier</a></li>
                   </ul>
                </div>
                <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
          </nav>
-         <h1 class="col-sm-offset-2 col-sm-8">Inscrire un atelier</h1>
+         <h1 class="col-sm-offset-2 col-sm-8">Modifier un atelier</h1>
          <form class="form-horizontal col-sm-offset-2 col-sm-8" action=".php" method="post">
             <div class="form-group">
                <label for="input-titre" >Titre</label>
-               <input type="text" name="titre" class="form-control" id="input-titre" placeholder="Titre" required>
+               <input type="text" name="titre" class="form-control" id="input-titre" placeholder="Titre" value="Titre" required>
             </div>
             <div class="form-group">
                <label for="input-theme" >Thème</label>
-               <input type="text" name="theme" class="form-control" id="input-theme" placeholder="Thème" required>
+               <input type="text" name="theme" class="form-control" id="input-theme" placeholder="Thème" value="Thème" required>
             </div>
             <div class="form-group">
                <label for="input-type" >Type</label>
-               <input type="text" name="type" class="form-control" id="input-type" placeholder="Type" required>
+               <input type="text" name="type" class="form-control" id="input-type" placeholder="Type" value="Type" required>
             </div>
             <div class="form-group">
                <label for="input-creneaux" >Créneaux</label>
@@ -66,7 +66,7 @@
                      <td>
                         <div class="checkbox">
                            <label>
-                           <input type="checkbox" name="a1"  value="1" aria-label="">
+                           <input type="checkbox" name="a1"  value="1" aria-label="" checked>
                            </label>
                         </div>
                      </td>
@@ -80,7 +80,7 @@
                      <td>
                         <div class="checkbox">
                            <label>
-                           <input type="checkbox" name="a3" value="1" aria-label="">
+                           <input type="checkbox" name="a3" value="1" aria-label="" checked>
                            </label>
                         </div>
                      </td>
@@ -142,20 +142,20 @@
             </div>
             <div class="form-group">
                <label for="input-animateurs" >Animateur(s)</label>
-               <input type="text" name="animateurs" class="form-control" id="input-animateurs" placeholder="Animateur(s)" required>
+               <input type="text" name="animateurs" class="form-control" id="input-animateurs" placeholder="Animateur(s)" value="Animateur(s)" required>
             </div>
             <div class="form-group">
                <label for="input-adresse" >Adresse</label>
-               <input type="text" name="adresse" class="form-control" id="input-adresse" placeholder="Adresse" required>
+               <input type="text" name="adresse" class="form-control" id="input-adresse" placeholder="Adresse" value="Adresse" required>
             </div>
             <div class="form-group">
                <label for="input-ville" >Ville</label>
-               <input type="text" name="ville" class="form-control" id="input-ville" placeholder="Ville" required>
+               <input type="text" name="ville" class="form-control" id="input-ville" placeholder="Ville" value="Ville"  required>
             </div>
             <div class="col-sm-5 no-margin no-padding">
                <div class="form-group">
                   <label for="input-cp" class="control-label">Code postal</label>
-                  <input type="text" name="cp" class="form-control" id="input-cp" pattern="[0-9]{5}" placeholder="Code postal" required>
+                  <input type="text" name="cp" class="form-control" id="input-cp" pattern="[0-9]{5}" placeholder="Code postal" value="33400" required>
                </div>
             </div>
             <div class="col-sm-offset-2 col-sm-5 no-padding">
@@ -163,7 +163,7 @@
                   <label for="input-zone" class="control-label">Zone</label>
                   <select name="zone" class="form-control" id="input-zone">
                      <option>A</option>
-                     <option>B</option>
+                     <option selected>B</option>
                      <option>C</option>
                      <option>D</option>
                   </select>
@@ -173,7 +173,7 @@
                <div class="form-group">
                   <label for="input-duree" >Durée</label>
                   <div class="input-group">
-                     <input  type="number" name="duree" min="1" class="form-control" id="input-duree" placeholder="Durée">
+                     <input  type="number" name="duree" min="1" class="form-control" id="input-duree" placeholder="Durée" value="15">
                      <div class="input-group-addon"> minutes</div>
                   </div>
                </div>
@@ -182,14 +182,14 @@
                <div class="form-group">
                   <label for="input-capacitee">Capacitée</label>
                   <div class="input-group">
-                     <input type="number" name="capacitee" min="1" class="form-control" id="input-capacitee" placeholder="Capacitée">
+                     <input type="number" name="capacitee" min="1" class="form-control" id="input-capacitee" placeholder="Capacitée" value="32">
                      <div class="input-group-addon"> personnes</div>
                   </div>
                </div>
             </div>
             <div class="form-group">
                <label for="input-resume" >Résumé</label>
-               <textarea class="form-control" name="resume" rows="5" id="input-resume" placeholder="Résumé"></textarea>
+               <textarea class="form-control" name="resume" rows="5" id="input-resume" placeholder="Résumé">Résumé</textarea>
             </div>
             <div class="form-group">
                <label for="input-public">Public visé</label>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="checkbox">
                            <label>
-                           <input name="pv2" type="checkbox" value="1">
+                           <input name="pv2" type="checkbox" value="1" checked>
                            6ème - 5ème
                            </label>
                         </div>
@@ -254,7 +254,7 @@
             </div>
             <div class="form-group">
                <label for="input-disciplines" >Disciplines </label>
-               <input type="text" name="disciplines" class="form-control" id="input-disciplines" placeholder="Disciplines" required>
+               <input type="text" name="disciplines" class="form-control" id="input-disciplines" placeholder="Disciplines" value="Chimie" required>
             </div>
             <div class="form-group">
                <button type="submit" class="btn btn-default pull-right">Valider</button>
