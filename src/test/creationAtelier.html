@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>CreationAtelier</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreationAtelier</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/CDP_Dev/src/web/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=liste.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>AssertElementPresent</td>
+	<td>//a[@href='/CDP_Dev/src/web/inscription.html'][@id='creer-atelier']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=creer-atelier</td>
+	<td></td>
+</tr>
+<!---- Creation Atelier - page inscription-->
+<tr>
+	<td>type</td>
+	<td>id=input-titre</td>
+	<td>Liquides durs et solides mous</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-theme</td>
+	<td>Découvertes fluides</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-type</td>
+	<td>scientifique</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=a2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pm2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=a5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pm5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-laboratoire</td>
+	<td>Centre de recherche Paul Pascal CNRS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-adresse</td>
+	<td>CRPP CNRS, 115 Avenue du Dr Schweitz</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-cp</td>
+	<td>33600</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-ville</td>
+	<td>Pessac</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=input-zone</td>
+	<td>label=D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-duree</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-capacitee</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=input-animateur</td>
+	<td>Martin Depardieu (Doctorant), Christophe Coutant (Doctorant)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-resume</td>
+	<td>les fluides complexes ...<br /><br /><br />... propriétés spectaculaires de quelques fluides complexes.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pv9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=input-disciplines</td>
+	<td>Chimie</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<!---- Contrôle de la création - dans la page Liste-->
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//a[@id='a1-titre']</td>
+	<td>Liquides durs et solides mou</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-theme']</td>
+	<td>Découvertes fluides</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-type']</td>
+	<td>scientifique</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//ul[@id='a1-a2']</td>
+	<td>Mardi matin</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//ul[@id='a1-pm2']</td>
+	<td>Mardi après-midi</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//ul[@id='a1-a5']</td>
+	<td>Jeudi matin</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//ul[@id='a1-pm5']</td>
+	<td>Jeudi après-midi</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-laboratoire']</td>
+	<td>Centre de recherche Paul Pascal CNRS</td>
+</tr>
+<tr>
+	<td>verifyPresent</td>
+	<td>//p[@id='a1-adresse']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyPresent</td>
+	<td>//p[@id='a1-duree']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyPresent</td>
+	<td>//p[@id='a1-capacitee']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-animateur']</td>
+	<td>Martin Depardieu (Doctorant), Christophe Coutant (Doctorant)</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-resume']</td>
+	<td>les fluides complexes ...<br /><br /><br />... propriétés spectaculaires de quelques fluides complexes.</td>
+</tr>
+<tr>
+	<td>verifyPresent</td>
+	<td>id=a1-pv</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>//p[@id='a1-disciplines']</td>
+	<td>Chimie</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
