@@ -62,13 +62,26 @@
 			{
 				background-color: #996699;
 			}
+
+			.test
+			{
+				background-color: #6699FF;
+			}
 		</style>
 
 
 
     </head>
     <body>
-
+	<h1> Tâches</h1>
+	<h2>code couleur</h2>
+	<p>
+		<span class="pre">Jaune</span> correspond aux tâches de présentation. </br>
+		<span class="tr">Rouge</span> correspond aux tâches de traitement. </br>
+		<span class="db">Vert</span> correspond aux tâches sur la Base de donnée (écriture de la table et requêtes). </br>
+		<span class="lin">Violet</span> correspond aux tâches de liaison. </br>
+		<span class="test">Bleu</span> correspond aux tâches de test (en l'occurence, le test de validation). </br>
+	</p>
 		<table>
 			<caption>Kanban table</caption>
 
@@ -80,16 +93,26 @@
 		   </tr>
 
 			<tr>
-				<td> All </td>
+				<td rowspan="3"> All </td>
 				<td></td>
 				<td></td>
-				<td class="db">T7 : Quentin</td>
+				<td class="db">T7 - Table Atelier : Quentin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="test">TValid - Redac : Bérénice</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="test">TValid - Exec : </td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td rowspan="4"> US1 : créer atelier </td>
 				<td></td>
-        <td class="pre">T1 : Valentin</td>
 				<td></td>
+        <td class="pre">T1 : Valentin</td>
 			</tr>
 			<tr>
 				<td></td>
@@ -103,15 +126,16 @@
 
 			</tr>
 			<tr>
+
 				<td></td>
 				<td class="lin">T11 : Quentin</td>
 				<td></td>
 			</tr>
 			<tr>
 				<td rowspan="4"> US2 : modifier atelier </td>
-				<td class="pre">T2</td>
 				<td></td>
 				<td></td>
+        <td class="pre">T2 : Valentin</td>
 			</tr>
 			<tr>
 				<td></td>
@@ -126,14 +150,13 @@
 
 			</tr>
 			<tr>
-				<td class="lin">T12</td>
+				<td class="lin">T12 : </td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td rowspan="4"> US3 : lister atelier </td>
-				<td class="pre">T3</td>
-				<td></td>
+				<td class="pre">T3 : Valentin</td>
 				<td></td>
 			</tr>
 			<tr>
@@ -149,10 +172,11 @@
 
 			</tr>
 			<tr>
-				<td class="lin">T13</td>
+				<td class="lin">T13 : </td>
 				<td></td>
 				<td></td>
 			</tr>
+
 		</table>
 
     </body>

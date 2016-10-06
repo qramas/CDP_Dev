@@ -2,7 +2,7 @@
 /*
 
 Permet la creation d'un atelier en rentrant les différentes informations
-parametre example: "nom" : Presentation de Scrum "theme": conduite de projet, etc...
+parametre exemple: "nom" : Presentation de Scrum "theme": conduite de projet, etc...
 */
 include 'config.php';
 
