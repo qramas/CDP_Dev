@@ -29,7 +29,7 @@
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                      <li class="active"><a href="#">Lister les ateliers<span class="sr-only">(current)</span></a></li>
-                     <li><a href="#">Inscrire un atelier</a></li>
+                     <li><a href="inscription.php">Inscrire un atelier</a></li>
                   </ul>
                </div>
                <!-- /.navbar-collapse -->
