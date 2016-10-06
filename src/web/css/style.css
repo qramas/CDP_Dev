@@ -107,3 +107,8 @@ form {
     background-color: black;
     color:white;
 }
+
+.liste-ateliers {
+  margin-top: 50px;
+  float: right;;
+}
