@@ -28,7 +28,7 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                     <li><a href="#">Lister les ateliers</a></li>
+                     <li><a href="liste.php">Lister les ateliers</a></li>
                      <li class="active"><a href="#">Inscrire un atelier<span class="sr-only">(current)</span></a></li>
                   </ul>
                </div>

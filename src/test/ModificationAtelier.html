@@ -18,17 +18,17 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=liste.html</td>
+	<td>link=liste.php</td>
 	<td></td>
 </tr>
 <tr>
-	<td>AssertElementPresent</td>
-	<td>//a[@href='/CDP_Dev/src/web/modification.html'][@id='a1-modification']</td>
+	<td>assertElementPresent</td>
+	<td>//a[@href='/CDP_Dev/src/web/modification.php.id=1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[@id='a1-modification']</td>
+	<td>//a[@href='/CDP_Dev/src/web/modification.php.id=1']</td>
 	<td></td>
 </tr>
 <!---- Modifications d'un Atelier - page modification-->
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=input-laboratoire</td>
+	<td>id=input-animateurs</td>
 	<td>CNRS</td>
 </tr>
 <tr>
@@ -94,11 +94,6 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=input-animateur</td>
-	<td>Martin Depardieu</td>
-</tr>
-<tr>
-	<td>type</td>
 	<td>id=input-resume</td>
 	<td>les fluides complexes ...<br />... propriétés spectaculaires de quelques fluides complexes.</td>
 </tr>
@@ -108,7 +103,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>typeAndWait</td>
+	<td>type</td>
 	<td>id=input-disciplines</td>
 	<td>Chimie pure</td>
 </tr>
@@ -119,91 +114,35 @@
 </tr>
 <!---- Contrôle de la modification - page liste -->
 <tr>
-	<td>verifyTextPresent</td>
-	<td>//a[@id='a1-titre']</td>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='atelier-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='atelier-1']/td[1]</td>
 	<td>Liquides durs et Solides mous</td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-theme']</td>
-	<td>Découvertes des fluides</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-type']</td>
+	<td>verifyText</td>
+	<td>//tr[@id='atelier-1']/td[2]</td>
 	<td>atelier scientifique</td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>//ul[@id='a1-a2']</td>
-	<td>Mardi matin</td>
+	<td>verifyText</td>
+	<td>//tr[@id='atelier-1']/td[3]</td>
+	<td>25min</td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>//ul[@id='a1-pm2']</td>
-	<td>Mardi après-midi</td>
+	<td>verifyText</td>
+	<td>//tr[@id='atelier-1']/td[4]</td>
+	<td>6</td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>//ul[@id='a1-a5']</td>
-	<td>Jeudi matin</td>
+	<td>verifyText</td>
+	<td>//tr[@id='atelier-1']/td[5]</td>
+	<td>B</td>
 </tr>
-<tr>
-	<td>verifyTextNotPresent</td>
-	<td>//ul[@id='a1-pm5']</td>
-	<td>Jeudi après-midi</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//ul[@id='a1-a1']</td>
-	<td>Lundi matin</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//ul[@id='a1-pm1']</td>
-	<td>Lundi après-midi</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-laboratoire']</td>
-	<td>CNRS</td>
-</tr>
-<tr>
-	<td>verifyPresent</td>
-	<td>//p[@id='a1-adresse']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyPresent</td>
-	<td>//p[@id='a1-duree']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyPresent</td>
-	<td>//p[@id='a1-capacitee']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-animateur']</td>
-	<td>Martin Depardieu</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-resume']</td>
-	<td>les fluides complexes ...<br />... propriétés spectaculaires de quelques fluides complexes.</td>
-</tr>
-<tr>
-	<td>verifyPresent</td>
-	<td>id=a1-pv</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>//p[@id='a1-disciplines']</td>
-	<td>Chimie pure</td>
-</tr>
-
 </tbody></table>
 </body>
 </html>
