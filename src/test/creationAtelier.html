@@ -35,12 +35,12 @@
 <tr>
 	<td>type</td>
 	<td>id=input-titre</td>
-	<td>Liquides durs et solides mous</td>
+	<td>Liquides durs</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-theme</td>
-	<td>Découvertes fluides</td>
+	<td>fluides</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -58,24 +58,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>name=a5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>name=pm5</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>id=input-animateurs</td>
-	<td>Centre de recherche Paul Pascal CNRS</td>
+	<td>toto</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-adresse</td>
-	<td>CRPP CNRS, 115 Avenue du Dr Schweitz</td>
+	<td>CRPP CNRS</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -105,7 +95,7 @@
 <tr>
 	<td>type</td>
 	<td>id=input-resume</td>
-	<td>les fluides complexes ...<br /><br /><br />... propriétés spectaculaires de quelques fluides complexes.</td>
+	<td>les fluides complexes ...</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -118,21 +108,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>name=pv7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>name=pv8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>name=pv9</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>id=input-disciplines</td>
 	<td>Chimie</td>
@@ -142,16 +117,21 @@
 	<td>//button[@type='submit']</td>
 	<td></td>
 </tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Lister les ateliers</td>
+	<td></td>
+</tr>
 <!---- Contrôle de la création - dans la page Liste-->
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//tr[@id='atelier-1']</td>
+	<td>//tr[@id='glob:atelier-[0-9]{1,2,3}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[1]</td>
-	<td>Liquides durs et solides mou</td>
+	<td>//tr[@id='atelier-*']/td[1]</td>
+	<td>Liquides durs</td>
 </tr>
 <tr>
 	<td>verifyText</td>
