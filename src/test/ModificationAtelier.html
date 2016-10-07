@@ -23,29 +23,29 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//a[@href='/CDP_Dev/src/web/modification.php.id=1']</td>
+	<td>css=span.glyphicon.glyphicon-pencil</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//a[@href='/CDP_Dev/src/web/modification.php.id=1']</td>
+	<td>clickAndWait</td>
+	<td>css=span.glyphicon.glyphicon-pencil</td>
 	<td></td>
 </tr>
 <!---- Modifications d'un Atelier - page modification-->
 <tr>
 	<td>type</td>
 	<td>id=input-titre</td>
-	<td>Liquides durs et Solides mous</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-theme</td>
-	<td>Découvertes des fluides</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-type</td>
-	<td>atelier scientifique</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -60,12 +60,12 @@
 <tr>
 	<td>type</td>
 	<td>id=input-animateurs</td>
-	<td>CNRS</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-adresse</td>
-	<td>CRPP</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -75,7 +75,7 @@
 <tr>
 	<td>type</td>
 	<td>id=input-ville</td>
-	<td>Pessac - Montaigne</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -85,17 +85,17 @@
 <tr>
 	<td>type</td>
 	<td>id=input-duree</td>
-	<td>25</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-capacitee</td>
-	<td>6</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=input-resume</td>
-	<td>les fluides complexes ...<br />... propriétés spectaculaires de quelques fluides complexes.</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -105,42 +105,47 @@
 <tr>
 	<td>type</td>
 	<td>id=input-disciplines</td>
-	<td>Chimie pure</td>
+	<td>a</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Lister les ateliers</td>
 	<td></td>
 </tr>
 <!---- Contrôle de la modification - page liste -->
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//tr[@id='atelier-1']</td>
+	<td>//tr[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[1]</td>
-	<td>Liquides durs et Solides mous</td>
+	<td>//tr[2]/td[1]</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[2]</td>
-	<td>atelier scientifique</td>
+	<td>//tr[2]/td[2]</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[3]</td>
-	<td>25min</td>
+	<td>//tr[2]/td[3]</td>
+	<td>1min</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[4]</td>
-	<td>6</td>
+	<td>//tr[2]/td[4]</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[5]</td>
+	<td>//tr[2]/td[5]</td>
 	<td>B</td>
 </tr>
 </tbody></table>

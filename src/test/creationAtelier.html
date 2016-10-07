@@ -27,11 +27,11 @@
 	<td>Inscrire un atelier</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>link=Inscrire un atelier</td>
 	<td></td>
 </tr>
-<!---- Creation Atelier - page inscription-->
+<!---- Creation d'un atelier -- page inscription-->
 <tr>
 	<td>type</td>
 	<td>id=input-titre</td>
@@ -73,14 +73,14 @@
 	<td>33600</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=input-ville</td>
-	<td>Pessac</td>
-</tr>
-<tr>
 	<td>select</td>
 	<td>id=input-zone</td>
 	<td>label=D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-ville</td>
+	<td>Pessac</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -125,32 +125,32 @@
 <!---- Contrôle de la création - dans la page Liste-->
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//tr[@id='glob:atelier-[0-9]{1,2,3}']</td>
+	<td>//tr[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-*']/td[1]</td>
+	<td>//tr[2]/td[1]</td>
 	<td>Liquides durs</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[2]</td>
+	<td>//tr[2]/td[2]</td>
 	<td>scientifique</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[3]</td>
+	<td>//tr[2]/td[3]</td>
 	<td>30min</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[4]</td>
+	<td>//tr[2]/td[4]</td>
 	<td>12</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[@id='atelier-1']/td[5]</td>
+	<td>//tr[2]/td[5]</td>
 	<td>D</td>
 </tr>
 </tbody></table>

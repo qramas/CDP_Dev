@@ -61,7 +61,7 @@
                <td><?php echo $donnees['duree']; ?>min</td>
                <td class="text-center"><?php echo $donnees['capacite']; ?></td>
                <td class="text-center"><?php echo $donnees['zone']; ?></td>
-               <td class="text-center"><a href="modification.pdp?id=<?php echo $donnees['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+               <td class="text-center"><a href="modification.php?id=<?php echo $donnees['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                </tr>
 
            <?php
